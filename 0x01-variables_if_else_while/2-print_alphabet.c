@@ -7,11 +7,12 @@
  */
 {
              char j;
+
              j = ‘a’;
              while (j <= ‘z’)
              {
-                    putchar(c);
-                    c++;
+                    putchar(j);
+                    j++;
               }
              putchar('\n'); 
              return (0);

@@ -5,16 +5,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-             char j;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-             j = ‘a’;
-             while (j <= ‘z’)
-             {
-                    putchar(j);
-                    j++;
-              }
-             putchar('\n'); 
-             return (0);
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }

@@ -30,9 +30,9 @@ int is_palindrome_helper(char *s, int end)
 
 	if (*s != s[end]) 
 	{
-		return 0;
+		return (0);
 	}
-	return (is_palindrome_helper(s + 1, end - 2));
+	return (is_palindrome_helper(s + 1, end - 1));
 }
 
 /**

@@ -21,18 +21,18 @@ int get_length(char *s)
  * @end: position prmtr
  * Return: recursion
  */
-int is_palindrome_helper(char *s, int start, int end) 
+int is_palindrome_helper(char *s, int end) 
 {
-	if (start >= end) 
+	if (end < 1) 
 	{
 		return (1);
 	}
 
-	if (s[start] != s[end]) 
+	if (*s != s[end]) 
 	{
 		return 0;
 	}
-	return (is_palindrome_helper(s, start + 1, end - 1));
+	return (is_palindrome_helper(s + 1, end - 2));
 }
 
 /**
@@ -44,5 +44,5 @@ int is_palindrome(char *s)
 {
 	int len = get_length(s);
 
-	return (is_palindrome_helper(s, 0, len - 1));
+	return (is_palindrome_helper(s, len - 1));
 }

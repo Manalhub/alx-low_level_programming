@@ -7,14 +7,11 @@
 
 int get_length(char *s)
 {
-	int len = 0;
-
-	while (*s != '\0') 
+	if (!*s)
 	{
-		len++;
-		s++;
+		return (0);
 	}
-	return (len);
+    return (1 + get_length(s++));
 }
 
 /**

@@ -6,21 +6,21 @@
  */
 int _atoi(char *s)
 {
- 	int sign = 1, i = 0;
- 	unsigned int conv = 0;
+	int sign = 1, i = 0;
+	unsigned int conv = 0;
 
 
- 	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
- 	{
- 		if (s[i] == '-')
- 			sign *= -1;
- 		i++;
- 	}
- 	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
- 	{
- 		conv = (conv * 10) + (s[i] - '0');
- 		i++;
- 	}
- 	conv *= sign;
- 	return (conv);
- }
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	{
+		if (s[i] == '-')
+			sign *= -1;
+		i++;
+	}
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
+	{
+		conv = (conv * 10) + (s[i] - '0');
+		i++;
+	}
+	conv *= sign;
+	return (conv);
+}

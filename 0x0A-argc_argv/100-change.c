@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 			result = result + (num / coins[j]);
 			num = num % coins[j];
 			j++;
+			}
 		}
 
 	printf("%d\n", result);

@@ -1,7 +1,6 @@
 #include "main.h"
-		
 #include <stdlib.h>
-		
+
 /**
  * create_array - create array of size size and assign char c
  * @size: size of array
@@ -9,7 +8,7 @@
  *
  * Return: pointer to array, NULL if fail or size is 0
  */
-		
+
 char *create_array(unsigned int size, char c)
 {
 
@@ -26,5 +25,5 @@ char *create_array(unsigned int size, char c)
 	for (i = 0; i < size; i++)
 		crt[i] = c;
 
-	return(crt);
+	return (crt);
 }

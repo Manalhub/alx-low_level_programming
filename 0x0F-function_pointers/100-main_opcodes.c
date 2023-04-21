@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	arr = (char *) main;
 
 	for (i = 0 ; i < n; i++)
-		printf("%02x", p[i]);
+		printf("%02x", arr[i]);
 
 
 	printf("\n");

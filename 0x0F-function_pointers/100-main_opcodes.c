@@ -30,8 +30,13 @@ int main(int argc, char *argv[])
 	arr = (char *) main;
 
 	for (i = 0 ; i < n; i++)
-		printf("%02x", arr[i]);
-
-
-	printf("\n");
+	{
+		if (i == n - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx", arr[i]);
+	}
+	return (0);
 }

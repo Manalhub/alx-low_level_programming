@@ -7,18 +7,16 @@
  *Return: number of nodes
  **/
 
-
 size_t print_dlistint(const dlistint_t *h)
 {
-	const dlistint_t *current = h;
-	size_t count = 0;
+	size_t num = 0;
 
-	while (current != NULL)
+	while (h)
 	{
-		printf("%d\n", current->n);
-		current = current->next;
-		count++;
+		printf("%d\n", h->n);
+		num++;
+		h = h->next;
 	}
 
-	return (count);
+	return (num);
 }

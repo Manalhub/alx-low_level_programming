@@ -5,18 +5,17 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
+ *struct dlistint_s - singly linked list
+ *@n: integer
+ *@next: points to the next node
  *
- * Description: singly linked list node structure
- * for alx project
+ *Description: singly linked list node structure
+ *for alx project
  **/
 
-typedef struct dlistint_s 
+typedef struct dlistint_s
 {
 	int n;
-	struct dlistint_s *prev;
 	struct dlistint_s *next;
 } dlistint_t;
 
